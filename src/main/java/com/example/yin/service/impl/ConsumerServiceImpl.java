@@ -51,7 +51,7 @@ public class ConsumerServiceImpl extends ServiceImpl<ConsumerMapper, Consumer>
         if ("".equals(consumer.getEmail())) {
             consumer.setEmail(null);
         }
-        consumer.setAvator("img/avatorImages/user.jpg");
+        consumer.setAvator("img/avatorImages/tubiao.jpg");
         try {
             if (consumerMapper.insert(consumer) > 0) {
                 return R.success("注册成功");
